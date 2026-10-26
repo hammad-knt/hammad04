@@ -1,0 +1,117 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(243, 246, 252);
+    color: rgb(23, 35, 62);
+    padding: 25px 15px;
+}
+
+.correction-container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.correction-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.correction-header h1 {
+    font-size: 25px;
+    color: rgb(49, 91, 234);
+    margin-bottom: 8px;
+}
+
+.correction-header p {
+    color: rgb(100, 112, 135);
+}
+
+.correction-card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(16, 29, 58, 0.08);
+}
+
+.correction-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#studentName {
+    color: rgb(100, 112, 135);
+    margin-bottom: 25px;
+}
+
+.correction-question {
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(225, 230, 240);
+}
+
+.correction-question h3 {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.correction-question p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 8px;
+}
+
+.correct-answer {
+    color: rgb(22, 135, 79);
+    font-weight: bold;
+}
+
+.your-answer {
+    color: rgb(190, 55, 55);
+}
+
+.correction-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.correction-buttons button {
+    border: none;
+    border-radius: 7px;
+    padding: 12px 18px;
+    background: rgb(49, 91, 234);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.correction-buttons button:hover {
+    background: rgb(36, 72, 200);
+}
+
+
+/* responsiveness */
+@media (max-width: 500px) {
+    .correction-card {
+        padding: 20px 16px;
+    }
+
+    .correction-header h1 {
+        font-size: 21px;
+    }
+
+    .correction-buttons {
+        flex-direction: column;
+    }
+
+    .correction-buttons button {
+        width: 100%;
+    }
+}

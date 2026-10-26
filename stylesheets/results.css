@@ -1,0 +1,197 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(243, 246, 252);
+    color: rgb(23, 35, 62);
+    min-height: 100vh;
+    padding: 25px 15px;
+}
+
+.results-container {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.results-card {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(16, 29, 58, 0.08);
+    text-align: center;
+}
+
+.results-header {
+    margin-bottom: 25px;
+}
+
+.results-header h1 {
+    font-size: 24px;
+    color: rgb(49, 91, 234);
+    margin-bottom: 8px;
+}
+
+.results-header p {
+    color: rgb(100, 112, 135);
+}
+
+.results-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: rgb(224, 245, 234);
+    color: rgb(22, 135, 79);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.results-card > h2 {
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.results-message {
+    color: rgb(100, 112, 135);
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.student-details {
+    padding: 15px;
+    background: rgb(247, 249, 253);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow-wrap: anywhere;
+}
+
+.score-box {
+    padding: 25px 15px;
+    background: rgb(239, 243, 255);
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.score-box > p:first-child {
+    color: rgb(76, 91, 125);
+    margin-bottom: 10px;
+}
+
+.score-box h2 {
+    font-size: 43px;
+    color: rgb(49, 91, 234);
+    margin-bottom: 8px;
+}
+
+.total-score {
+    font-size: 23px;
+    color: rgb(100, 112, 135);
+}
+
+#percentage {
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(49, 91, 234);
+}
+
+.result-details {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.result-item {
+    flex: 1;
+    padding: 18px 10px;
+    border: 1px solid rgb(225, 230, 240);
+    border-radius: 9px;
+}
+
+.result-item span {
+    display: block;
+    color: rgb(100, 112, 135);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.result-item strong {
+    font-size: 22px;
+}
+
+.result-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.result-buttons button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 7px;
+    background: rgb(49, 91, 234);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.result-buttons button:hover {
+    background: rgb(36, 72, 200);
+}
+
+.result-buttons .restart-button {
+    background: white;
+    color: rgb(49, 91, 234);
+    border: 1px solid rgb(49, 91, 234);
+}
+
+.result-buttons .restart-button:hover {
+    background: rgb(239, 243, 255);
+}
+
+.results-footer {
+    text-align: center;
+    color: rgb(100, 112, 135);
+    font-size: 13px;
+    margin-top: 22px;
+}
+
+/* responsiveness */
+@media (max-width: 480px) {
+    .results-card {
+        padding: 25px 18px;
+    }
+
+    .results-header h1 {
+        font-size: 20px;
+    }
+
+    .results-card > h2 {
+        font-size: 23px;
+    }
+
+    .score-box h2 {
+        font-size: 36px;
+    }
+
+    .result-details {
+        gap: 10px;
+    }
+
+    .result-item {
+        padding: 15px 5px;
+    }
+
+    .result-item strong {
+        font-size: 19px;
+    }
+}

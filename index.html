@@ -1,0 +1,64 @@
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBT Exam Portal | Login</title>
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <script src="javascript/index.js" defer></script>
+</head>
+<body>
+    <main class="login-container">
+        <section class="login-card">
+            <div class="logo">
+                <h1>HAMMAD'S EXAM PORTAL</h1>
+            </div>
+
+            <p class="subtitle">
+                Test your knowledge. Challenge yourself.
+            </p>
+
+            <div class="welcome">
+                <h2>Welcome Back!</h2>
+                <p>Enter your details to begin your examination.</p>
+            </div>
+
+            <form id="loginForm" novalidate onsubmit="login(event)">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name"                     autocomplete="name" required>
+                    <small class="error" id="nameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+                    <small class="error" id="emailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+
+                    <div class="password-wrapper">
+                        <input type="password" id="password" name="password" placeholder="At least 8 characters"                         autocomplete="current-password"minlength="8"required>
+
+                        <button id="togglePassword" class="toggle-password"onclick="togglePasswordVisibility()"
+                        >Show</button>
+                    </div>
+
+                    <small class="error" id="passwordError"></small>
+                </div>
+
+                <p id="formMessage" class="form-message" role="alert"></p>
+
+                <button type="submit" class="login-button">
+                    Login / Continue
+                </button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+```

@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBT Exam Portal | Results</title>
+    <link rel="stylesheet" href="../stylesheets/results.css">
+    <script src="../javascript/results.js" defer></script>
+</head>
+<body>
+    <main class="results-container">
+        <section class="results-card">
+            <header class="results-header">
+                <h1>HAMMAD'S EXAM PORTAL</h1>
+                <p>Examination Results</p>
+            </header>
+
+            <div class="results-icon">✓</div>
+
+            <h2>Exam Completed!</h2>
+            <p class="results-message">Your examination has been submitted successfully.</p>
+
+            <div class="student-details">
+                <p>Student Name: <strong id="studentName">Loading...</strong></p>
+            </div>
+
+            <div class="score-box">
+                <p>Your Score</p>
+                <h2><span id="score">0</span><span class="total-score"> / 100</span></h2>
+                <p id="percentage">0%</p>
+            </div>
+
+            <div class="result-details">
+                <div class="result-item">
+                    <span>Correct Answers</span>
+                    <strong id="correctAnswers">0 / 20</strong>
+                </div>
+
+                <div class="result-item">
+                    <span>Grade</span>
+                    <strong id="grade">-</strong>
+                </div>
+            </div>
+
+            <div class="result-buttons">
+                <button type="button" onclick="viewCorrections()">View Corrections</button>
+                <button type="button" class="restart-button" onclick="restartExam()">Restart Exam</button>
+            </div>
+        </section>
+
+        <footer class="results-footer">
+            <p>Thank you for taking this examination.</p>
+        </footer>
+    </main>
+</body>
+</html>
+  

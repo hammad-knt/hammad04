@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBT Exam Portal | Examination</title>
+    <link rel="stylesheet" href="../stylesheets/exam.css">
+    <script src="../javascript/exam.js" defer></script>
+</head>
+<body>
+    <main class="exam-container">
+        <header class="exam-header">
+            <div class="exam-logo">
+                <h1>CBT EXAM PORTAL</h1>
+            </div>
+            <p id="studentName">Student Examination</p>
+        </header>
+
+        <section class="exam-card">
+            <div class="exam-heading">
+                <div>
+                    <p class="exam-label">GENERAL KNOWLEDGE</p>
+                    <h2>Examination</h2>
+                </div>
+                <div class="exam-total">
+                    <span id="questionNumber">Question 1 of 20</span>
+                    <small>5 marks per question</small>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <h3 id="questionText">Loading question...</h3>
+
+                <div id="optionsContainer" class="options-container">
+                   
+                </div>
+            </div>
+
+            <p id="examMessage" class="exam-message" role="status"></p>
+
+            <nav class="exam-navigation" aria-label="Question navigation">
+              <button type="button" id="previousBtn" class="previous-btn" onclick="previousQuestion()">← Previous</button>
+
+               <button type="button" id="nextBtn" class="next-btn" onclick="nextQuestion()">Next →</button>
+
+             <button type="button" id="endExamBtn" class="end-btn" onclick="endExam()" hidden>End Exam</button>
+            </nav>
+        </section>
+
+        <footer class="exam-footer">
+            <p>Read each question carefully before selecting your answer. Goodluck!</p>
+        </footer>
+    </main>
+</body>
+</html>
