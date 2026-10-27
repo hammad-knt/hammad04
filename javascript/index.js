@@ -78,8 +78,6 @@ function login(event) {
         sessionStorage.setItem("studentName", fullName);
         sessionStorage.setItem("studentEmail", email);
 
-      window.location.href = window.location.pathname.includes("/hammad04/")
-    ? "/hammad04/webpages/exam.html"
-    : "webpages/exam.html"; 
+  window.location.href = "../webpages/exam.html";
     }
 }
