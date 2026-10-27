@@ -78,6 +78,6 @@ function login(event) {
         sessionStorage.setItem("studentName", fullName);
         sessionStorage.setItem("studentEmail", email);
 
-  window.location.href = "../webpages/exam.html";
+ window.location.href = "webpages/exam.html";
     }
 }
